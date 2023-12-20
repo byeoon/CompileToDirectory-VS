@@ -1,13 +1,12 @@
 /* 
 Compile To Directory JS
-Version: 0.0.2
+Version: 0.0.3
 Author: byronbytes01
 */
 
 const directoryPath = 'builds';
 
 function DoesDirectoryExist() {
-  
 fetch('checkDirectory.php', {
   method: 'POST',
   headers: {
@@ -19,21 +18,21 @@ fetch('checkDirectory.php', {
   .then(result => {
     console.log("Success: " + result);
     alert("Successful! " + result); // debug
-    return 1;
+    return true;
   })
   .catch(error => {
     console.error('Error:', error);
     alert("There was an error." + error); // debug
-    return 0;
+    return false;
   });
-
   return;
 }
 
 DoesDirectoryExist();
-if(DoesDirectoryExist() == 0)
+
+if(!DoesDirectoryExist())
 {
-  alert("Unable to load CompileToDirectory, there is an error.");
+  alert("Unable to load CompileToDirectory, have you created the 'builds' directory?");
 }
 
 
