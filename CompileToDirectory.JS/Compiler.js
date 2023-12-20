@@ -1,6 +1,6 @@
 /* 
 Compile To Directory JS
-Version: 1.0
+Version: 0.0.2
 Author: byronbytes01
 */
 
@@ -18,7 +18,7 @@ fetch('checkDirectory.php', {
   .then(response => response.text())
   .then(result => {
     console.log("Success: " + result);
-    alert(result); // debug
+    alert("Successful! " + result); // debug
     return 1;
   })
   .catch(error => {
