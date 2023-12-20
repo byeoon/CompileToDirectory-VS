@@ -9,7 +9,7 @@ $directoryPath = $_POST['directoryPath'];
     }
     else
     {
-        mkdir($path);
+       // mkdir($path);
         return false;
     }
 
