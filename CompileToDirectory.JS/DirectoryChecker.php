@@ -5,11 +5,11 @@ $directoryPath = $_POST['directoryPath'];
     if($path !== false AND is_dir($path))
     {
         // Return canonicalized absolute pathname
-        mkdir($path);
         return $path;
     }
     else
     {
+        mkdir($path);
         return false;
     }
 
