@@ -3,9 +3,9 @@ Compile To Directory JS
 Version: 0.0.7
 Author: byronbytes01
 */
-import { enableBetaDirectory } from './options.js'
-import { verboseLogging } from './options.js'
-import { extraVerboseLogging } from './options.js'
+import { enableBetaDirectory } from 'options.js'
+import { verboseLogging } from 'options.js'
+import { extraVerboseLogging } from 'options.js'
 
 if(extraVerboseLogging == "true")
 {
