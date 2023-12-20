@@ -1,8 +1,16 @@
 /* 
 Compile To Directory JS
-Version: 0.0.6
+Version: 0.0.7
 Author: byronbytes01
 */
+import { enableBetaDirectory } from './options.js'
+import { verboseLogging } from './options.js'
+import { extraVerboseLogging } from './options.js'
+
+if(extraVerboseLogging == "true")
+{
+  alert("Extra verbose logging has been enabled.");
+}
 
 const directoryPath = 'builds';
 
