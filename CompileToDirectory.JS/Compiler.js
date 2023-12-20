@@ -4,6 +4,7 @@ Version: 1.0
 Author: byronbytes01
 */
 
+alert("this is a test");
 const directoryPath = 'builds';
 
 fetch('checkDirectory.php', {
