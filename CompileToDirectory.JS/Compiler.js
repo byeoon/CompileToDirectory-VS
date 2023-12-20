@@ -1,6 +1,6 @@
 /* 
-Compile To Directory JS
-Version: 0.0.10.1
+Compile To Directory JS - Compiler
+Version: 0.0.11
 Author: byronbytes01
 */
 
@@ -23,7 +23,7 @@ if(extraVerboseLogging == "true")
 
 
 function DoesDirectoryExist() {
-fetch('https://cdn.jsdelivr.net/gh/byronbytes01/CompileToDirectory-VS@js-0.0.10/CompileToDirectory.JS/DirectoryChecker.php', {
+fetch('DirectoryChecker.php', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -33,13 +33,17 @@ fetch('https://cdn.jsdelivr.net/gh/byronbytes01/CompileToDirectory-VS@js-0.0.10/
   .then(response => response.text())
   .then(result => {
     console.log("Success: " + result);
-    alert("Successful! " + result); // debug
+    alert("Success: " + result);
   })
   .catch(error => {
-    console.error('Error:', error);
-    alert("There was an error." + error); // debug
+    console.error('Error: ', error);
+    alert("Error: " + error);
   });
 }
 
+function SetVariables() {
+  console.log("WIP");
+}
+console.log(directoryPath);
 DoesDirectoryExist();
 
