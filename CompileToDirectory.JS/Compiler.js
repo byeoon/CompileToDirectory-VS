@@ -23,7 +23,7 @@ if(extraVerboseLogging == "true")
 
 
 function DoesDirectoryExist() {
-fetch('checkDirectory.php', {
+fetch('https://cdn.jsdelivr.net/gh/byronbytes01/CompileToDirectory-VS@js-0.0.9/CompileToDirectory.JS/DirectoryChecker.js', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
