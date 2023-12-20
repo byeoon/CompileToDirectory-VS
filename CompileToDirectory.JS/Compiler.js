@@ -1,10 +1,11 @@
 /* 
 Compile To Directory JS
-Version: 0.0.4
+Version: 0.0.6
 Author: byronbytes01
 */
 
 const directoryPath = 'builds';
+
 
 function DoesDirectoryExist() {
 fetch('checkDirectory.php', {
@@ -23,15 +24,7 @@ fetch('checkDirectory.php', {
     console.error('Error:', error);
     alert("There was an error." + error); // debug
   });
-  return;
 }
 
 DoesDirectoryExist();
-
-if(DoesDirectoryExist() == 0)
-{
-  alert("Unable to load CompileToDirectory, have you created the 'builds' directory?");
-}
-
-
 
