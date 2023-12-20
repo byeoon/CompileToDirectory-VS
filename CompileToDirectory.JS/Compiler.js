@@ -20,5 +20,6 @@ fetch('checkDirectory.php', {
   })
   .catch(error => {
     console.error('Error:', error);
+    alert(result); // debug
   });
 
