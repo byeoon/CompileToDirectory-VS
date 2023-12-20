@@ -4,7 +4,6 @@ Version: 1.0
 Author: byronbytes01
 */
 
-alert("this is a test");
 const directoryPath = 'builds';
 
 fetch('checkDirectory.php', {
@@ -21,6 +20,6 @@ fetch('checkDirectory.php', {
   })
   .catch(error => {
     console.error('Error:', error);
-    alert(result); // debug
+    alert("There was an error"); // debug
   });
 
