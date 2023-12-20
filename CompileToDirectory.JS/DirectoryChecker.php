@@ -1,16 +1,16 @@
 <?php
-$directoryPath = $_POST['builds'];
-/*
-$directoryPathStable = $_POST['builds/stable'];
-$directoryPathBeta = $_POST['builds/beta'];
-*/
-
+$directoryPath = $_POST['directoryPath'];
 if (is_dir($directoryPath)) {
     echo 'Default build path directory exists.';
 } else {
     echo 'Default build path directory does not exist.';
 }
+
 /*
+$directoryPathStable = $_POST['builds/stable'];
+$directoryPathBeta = $_POST['builds/beta'];
+
+
 if (is_dir($directoryPathStable)) {
     echo 'Stable build path directory exists.';
 } else {
