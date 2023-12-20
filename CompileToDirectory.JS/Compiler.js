@@ -1,6 +1,6 @@
 /* 
 Compile To Directory JS
-Version: 0.0.3
+Version: 0.0.4
 Author: byronbytes01
 */
 
@@ -18,19 +18,17 @@ fetch('checkDirectory.php', {
   .then(result => {
     console.log("Success: " + result);
     alert("Successful! " + result); // debug
-    return true;
   })
   .catch(error => {
     console.error('Error:', error);
     alert("There was an error." + error); // debug
-    return false;
   });
   return;
 }
 
 DoesDirectoryExist();
 
-if(!DoesDirectoryExist())
+if(DoesDirectoryExist() == 0)
 {
   alert("Unable to load CompileToDirectory, have you created the 'builds' directory?");
 }
