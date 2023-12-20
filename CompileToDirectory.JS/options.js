@@ -17,3 +17,6 @@ Developer Settings
 
 // Enables verbose logging to console.
 const verboseLogging = 'false';
+
+// Enables verbose logging via the 'alert' function.
+const extraVerboseLogging = 'false';
