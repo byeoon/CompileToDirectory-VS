@@ -1,6 +1,6 @@
 /* 
 Compile To Directory JS
-Version: 0.0.9
+Version: 0.0.10
 Author: byronbytes01
 */
 
@@ -23,7 +23,7 @@ if(extraVerboseLogging == "true")
 
 
 function DoesDirectoryExist() {
-fetch('https://cdn.jsdelivr.net/gh/byronbytes01/CompileToDirectory-VS@js-0.0.9/CompileToDirectory.JS/DirectoryChecker.js', {
+fetch('https://cdn.jsdelivr.net/gh/byronbytes01/CompileToDirectory-VS@js-0.0.10/CompileToDirectory.JS/DirectoryChecker.js', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
