@@ -1,11 +1,9 @@
 <?php
 $directoryPath = $_POST['directoryPath'];
 if (is_dir($directoryPath)) {
-    echo 'Default build path directory exists.';
-    return true;
+    return 1;
 } else {
-    echo 'Default build path directory does not exist.';
-    return false;
+    return 0;
 }
 
 /*
